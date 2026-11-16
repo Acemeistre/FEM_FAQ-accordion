@@ -22,7 +22,8 @@ body {
     background: url('./assets/images/background-pattern-mobile.svg'),
     var(--color-light-purple);
     background-repeat: no-repeat;
-    padding: 6rem var(--spacing-200)
+    padding: 6rem var(--spacing-200);
+    margin: 0;
 }
 
 main {
@@ -49,6 +50,32 @@ header img,
     margin: 0;
 }
 
+.accordion {
+    padding: 0
+}
+
 .item {
     list-style: none;
+    margin: var(--spacing-100) var(--spacing-300);
+    border-bottom: 1px solid var(--color-light-purple);
+}
+
+.item:last-child {
+    border: none;
+}
+
+button {
+    font-weight: 700;
+    font-size: 1rem;
+    display: flex;
+    background: none;
+    border: none;
+    color: var(--color-dark-purple);
+    gap: var(--spacing-300);
+    justify-content: space-between;
+}
+
+.answer {
+    color: var(--color-purple);
+    line-height: var(--spacing-300);
 }
