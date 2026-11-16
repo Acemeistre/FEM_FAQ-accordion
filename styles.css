@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    /*colours*/
+    --color-dark-purple: #301534;
+    --color-purple: #8B6990;
+    --color-light-purple: #F8EEFF;
+    --color-violet: #AD28EB;
+
+    /*spacing*/
+    --spacing-100: .5rem;
+    --spacing-200: 1rem;
+    --spacing-300: 1.5rem;
+    --spacing-400: 2rem;
+    --spacing-500: 2.5rem;
+}
