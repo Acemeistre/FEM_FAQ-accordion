@@ -16,3 +16,39 @@
     --spacing-400: 2rem;
     --spacing-500: 2.5rem;
 }
+
+body {
+    font-family: "Work sans", sans-serif;
+    background: url('./assets/images/background-pattern-mobile.svg'),
+    var(--color-light-purple);
+    background-repeat: no-repeat;
+    padding: 6rem var(--spacing-200)
+}
+
+main {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--spacing-100);
+}
+
+header {
+    display: flex;
+    gap: var(--spacing-300);
+    padding: var(--spacing-500) var(--spacing-400) 0;
+    color: var(--color-dark-purple);
+    margin: 0;
+}
+
+header img {
+    width: var(--spacing-300);
+}
+
+header img,
+.header-title {
+    margin: 0;
+}
+
+.item {
+    list-style: none;
+}
