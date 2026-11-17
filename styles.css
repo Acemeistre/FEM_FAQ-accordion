@@ -23,6 +23,7 @@ body {
     background: url('./assets/images/background-pattern-mobile.svg'),
     var(--color-light-purple);
     background-repeat: no-repeat;
+    background-size: 100%;
     padding: 6.5rem var(--spacing-200);
     margin: 0;
     min-height: 100vh;
@@ -53,7 +54,7 @@ header img,
 }
 
 .accordion {
-    padding: 0
+    padding: 0;
 }
 
 .item {
@@ -69,6 +70,18 @@ header img,
 .question {
     margin: var(--spacing-200) 0;
     width: 100%;
+}
+
+.question-button[aria-expanded="true"] .icon-open {
+    display: none;
+}
+
+.question-button[aria-expanded="true"] .icon-close {
+    display: block;
+}
+
+.item:has(.question-button[aria-expanded="true"]) .answer {
+    display: block;
 }
 
 button {
@@ -95,28 +108,19 @@ button:hover {
     display: none;
 }
 
-.question-button[open] .icon-open {
-    display: none;
-}
-
-.question-button[open] .icon-close {
-    display: block;
-}
-
 .answer {
     color: var(--color-purple);
     line-height: var(--spacing-300);
     display: none;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 600px) {
     body {
         background: url('./assets/images/background-pattern-desktop.svg'),
         var(--color-light-purple);
         background-repeat: no-repeat;
-        background-position: top, center;
-        background-size: 146rem;
-        
+        background-position: top;
+        background-size: 100%;   
     }
     main {
         max-width: 600px;
