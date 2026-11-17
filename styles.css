@@ -21,7 +21,7 @@ body {
     display: flex;
     font-family: "Work sans", sans-serif;
     background: url('./assets/images/background-pattern-mobile.svg'),
-    var(--color-light-purple);
+        var(--color-light-purple);
     background-repeat: no-repeat;
     background-size: 100%;
     padding: 6.5rem var(--spacing-200);
@@ -105,7 +105,7 @@ button:hover {
     color: var(--color-violet);
 }
 
-button:focus-visible { 
+button:focus-visible {
     color: var(--color-violet);
 }
 
@@ -122,12 +122,21 @@ button:focus-visible {
 @media (min-width: 600px) {
     body {
         background: url('./assets/images/background-pattern-desktop.svg'),
-        var(--color-light-purple);
+            var(--color-light-purple);
         background-repeat: no-repeat;
         background-position: top;
-        background-size: 100%;   
+        background-size: 100%;
     }
+
     main {
         max-width: 600px;
+    }
+
+    header img {
+        width: var(--spacing-400);
+    }
+
+    .header-title {
+        font-size: var(--spacing-500);
     }
 }
