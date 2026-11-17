@@ -102,6 +102,11 @@ button {
 
 button:hover {
     cursor: pointer;
+    color: var(--color-violet);
+}
+
+button:focus-visible { 
+    color: var(--color-violet);
 }
 
 .icon-close {
