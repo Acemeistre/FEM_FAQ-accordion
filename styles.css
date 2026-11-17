@@ -64,6 +64,11 @@ header img,
     border: none;
 }
 
+.question {
+    margin: var(--spacing-200) 0;
+    width: 100%;
+}
+
 button {
     font-family: inherit;
     font-weight: 700;
@@ -74,10 +79,30 @@ button {
     color: var(--color-dark-purple);
     gap: var(--spacing-300);
     padding: 0;
-    
+    text-align: left;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.icon-close {
+    display: none;
+}
+
+.question-button[open] .icon-open {
+    display: none;
+}
+
+.question-button[open] .icon-close {
+    display: block;
 }
 
 .answer {
     color: var(--color-purple);
     line-height: var(--spacing-300);
+    display: none;
 }
