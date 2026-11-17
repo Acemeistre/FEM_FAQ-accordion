@@ -61,7 +61,7 @@ Users should be able to:
 - Debugging JavaScript syntax while learning — mixing up `getElementById` with attribute selectors, forgetting quotes around attribute names, and confusing the `buttons` NodeList with the individual `button` parameter inside `.forEach()`.
 - Needed step-by-step guidance to write my first interactive JavaScript toggle—working through `querySelectorAll`, `.forEach()`, `addEventListener`, `getAttribute`, and `setAttribute` syntax, as well as mixing up the `buttons` NodeList with the individual `button` parameter inside the loop.
 
-#### Continued development/help
+#### Continued development
 
 - Practice writing `querySelectorAll`, `.forEach()`, and `addEventListener` patterns from memory so the syntax becomes second nature.
 - Get more comfortable using `:has()` and ARIA state attributes (`aria-expanded`, `aria-controls`) to drive CSS transitions and UI states.
